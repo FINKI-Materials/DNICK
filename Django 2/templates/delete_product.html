@@ -1,0 +1,8 @@
+<div>
+    <h2>Are you sure you wnat to delete this product?</h2>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Yes</button>
+        <a href="{% url 'outofstock' %}">Cancel</a>
+    </form>
+</div>
